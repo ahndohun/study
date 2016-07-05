@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+
+		.desk {
+			position:relative;
+			width:1000px;
+			height:643px;
+			background:url("images/bg.png") no-repeat;
+		}
+		.desk li {
+			position:absolute;
+			margin-top:-20px;
+			opacity:0;
+			transition: all 0.2s ease;
+		}
+
+		.effects {left:0; top:0; z-index:1;}
+		.box {left:513px; top:66px; z-index:2;}
+		.pencil {left:231px; top:204px; z-index:2;}
+		.meter {left:188px; top:421px; z-index:2;}
+		.candle {left:774px; top:168px; z-index:3;}
+		.mech {left:538px; top:80px; z-index:3;}
+		.paper {left:188px; top:199px; z-index:4;}
+		.clips {left:164px; top:351px; z-index:5;}
+		.stamp {left:386px; top:119px; z-index:5;}
+		.plastic {left:76px; top:259px; z-index:6;}
+		
+		.desk:hover li {margin-top:0; opacity: 1;}
+		.desk:hover li:nth-child(1) {transition-delay: 0.1s;}
+		.desk:hover li:nth-child(2) {transition-delay: 1s;}
+		.desk:hover li:nth-child(3) {transition-delay: 1.1s;}
+		.desk:hover li:nth-child(4) {transition-delay: 1.2s;}
+		.desk:hover li:nth-child(5) {transition-delay: 2s;}
+		.desk:hover li:nth-child(6) {transition-delay: 2.2s;}
+		.desk:hover li:nth-child(7) {transition-delay: 3s;}
+		.desk:hover li:nth-child(8) {transition-delay: 4s;}
+		.desk:hover li:nth-child(9) {transition-delay: 4.2s;}
+		.desk:hover li:nth-child(10) {transition-delay: 5s;}
+
+		 
+	</style>
+</head>
+<body>
+	<ul class="desk">
+		<li class="effects"><img src="images/effects.png" alt="그림자" /></li>
+		<li class="box"><img src="images/box.png" alt="박스" /></li>
+		<li class="pencil"><img src="images/pencil.png" alt="만년필" /></li>
+		<li class="meter"><img src="images/meter.png" alt="줄자" /></li>
+		<li class="candle"><img src="images/candle.png" alt="양초" /></li>
+		<li class="mech"><img src="images/mech.png" alt="콤파스" /></li>
+		<li class="paper"><img src="images/paper.png" alt="종이" /></li>
+		<li class="clips"><img src="images/clips.png" alt="클립" /></li>
+		<li class="stamp"><img src="images/stamp.png" alt="도장" /></li>
+		<li class="plastic"><img src="images/plastic flower.png" alt="플라스틱꽃" /></li>
+	</ul>
+</body>
+</html>
