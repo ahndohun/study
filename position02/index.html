@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>아이폰 포지션 예제</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height:100vh;
+			background:#c3b291;
+		}
+
+		.back {
+			position:relative;
+			width:820px;
+			height:487px;
+			background:url("images/Back-Gold.png") no-repeat;
+		}
+
+		li {
+			position:absolute;
+			transition: all 0.5s ease;
+		}
+
+		.memory {top:17px; left:26px;}
+		.sim {top:145px; left:654px;}
+		.battery {top:7px; left:61px;}
+		.button {top:280px; left:122px;}
+		.front {top:0; left:8px;}
+		.screen_border {top:25px; left:58px;}
+		.screen {top:20px; left:61px;}
+		.glass {top:0; left:8px;}
+
+		.back:hover .memory {margin-top:-50px;}
+		.back:hover .sim {top:260px; left:800px;}
+		.back:hover .battery {margin-top:-100px;}
+		.back:hover .button {margin-top:-200px;}
+		.back:hover .front {margin-top:-250px;}
+		.back:hover .screen_border {margin-top:-300px;}
+		.back:hover .screen {margin-top:-350px;}
+		.back:hover .glass {margin-top:-400px; }
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul class="back">
+			<li class="sim"><img src="images/SIM-Tray-Gold.png" alt="뒷판" /></li>
+			<li class="memory"><img src="images/Layer1.png" alt="메모리" /></li>
+			<li class="battery"><img src="images/Layer2.png" alt="배터리" /></li>
+			<li class="button"><img src="images/HomeButton-Gold.png" alt="버튼" /></li>
+			<li class="front"><img src="images/Front-Black.png" alt="앞판" /></li>
+			<li class="screen_border"><img src="images/Screen-Border.png" alt="화면테두리" /></li>
+			<li class="screen"><img src="images/Screen.png" alt="화면" /></li>
+			<li class="glass"><img src="images/Glass.png" alt="화면" /></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    background: #ddd;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 660px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container li {
+    float: left;
+    width: 220px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container li a {
+    display: block;
+    background: #fff;
+    overflow: hidden;
+}
+
+.container li .text {
+    height: 80px;
+    padding: 10px;
+}
+
+.container li.medium-size {
+    width: 440px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container li.medium-size .photo {
+    float: left;
+}
+
+.container li.medium-size .text {
+    float: left;
+    height: 180px;
+}
+
+.container li.big-size {
+    width: 440px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container li.vertical-img {
+    float: right;
+}
+
+.container li.vertical-img p {
+    height: 0;
+    overflow: hidden;
+}
