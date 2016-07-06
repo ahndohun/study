@@ -1,0 +1,77 @@
+body {
+	background:#ddd;
+}
+
+.container {
+	margin:0 auto;
+}
+
+.header {
+	position:relative;
+	padding:30px 0;
+	background:#fff;
+}
+
+.header h1 {
+	float:left;
+	height:20px;
+	padding:0 62px 0 82px;
+}
+
+.header .btn_hamberger {
+	position:absolute;
+	top:50%;
+	left:30px;
+	margin-top:-7px;
+}
+
+.gnb {
+	float:left;
+	padding-top:5px;
+}
+
+.gnb li {
+	float:left;
+	margin-right:28px;
+}
+
+.gnb li a {
+	color:#222;
+
+}
+
+.gnb li a:after {
+	content: "";
+	display:inline-block;
+	width:6px;
+	height:4px;
+	margin-left:10px;
+	background:url("../images/icon-arrow-down.png") no-repeat;
+	vertical-align: middle;
+}
+
+.quick_menu {
+	float:right;
+	padding:2px 30px 0 0;
+}
+
+.quick_menu li {
+	float:left;
+	margin-left:40px;
+}
+
+.quick_menu li.bag {position:relative;}
+.quick_menu li.bag .count {
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	background:#494189;
+	color:#fff;
+	font-size:9px;
+	border-radius:100%;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>controler</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+
+		body {
+			height:100vh;
+			margin:0;
+			line-height:100vh;
+			text-align:center;
+			background: radial-gradient(#8fb4ff, #4985ff, #0054ff);
+		}
+
+		.controls {
+			display:inline-block;
+			width:600px;
+			border:1px solid #1b1b1b;
+			border-radius:30px;
+			overflow:hidden;
+		}
+
+		button {
+			float:left;
+			width:20%;
+			padding:10px 0;
+			text-align:center;
+			border:0;
+			border-right:1px solid #1b1b1b;
+			box-sizing: border-box;
+			transition: all 0.1s;
+			font-size:14px;
+        	z-index:1;
+		}
+
+		button:last-of-type {border:0;}
+		
+		button:hover {cursor: pointer;}
+
+		button:focus {
+			padding-top:13px;
+			padding-top:12px;
+			box-shadow: inset 0px 3px 1px 0px rgba(0,0,0,0.4);
+			outline: none;
+			font-size:13px;
+		}
+
+		button .fa {
+			display:block;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="controls">
+		<button type="button">
+			<span class="fa fa-fast-backward" aria-hidden="true"></span>
+			fast-backward
+		</button>
+		<button type="button">
+			<span class="fa fa-stop" aria-hidden="true"></span>
+			stop
+		</button>
+		<button type="button">
+			<span class="fa fa-play" aria-hidden="true"></span>
+			play
+		</button>
+		<button type="button">
+			<span class="fa fa-pause" aria-hidden="true"></span>
+			pause
+		</button>
+		<button type="button">
+			<span class="fa fa-fast-forward" aria-hidden="true"></span>
+			fast-forward
+		</button>
+	</div>
+
+</body>
+</html>
