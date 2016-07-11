@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-arrow-down_2x {
+    width: 12px;
+    height: 8px;
+    background-position: 0 0;
+}
+
+.sprite-logo_2x {
+    width: 192px;
+    height: 40px;
+    background-position: 0 -8px;
+}
+
+.sprite-reload_2x {
+    width: 28px;
+    height: 32px;
+    background-position: 0 -48px;
+}
+
+.sprite-svg-icon-arrow-left_2x {
+    width: 64px;
+    height: 64px;
+    background-position: 0 -80px;
+}
+
+.sprite-svg-icon-arrow-right_2x {
+    width: 64px;
+    height: 64px;
+    background-position: 0 -144px;
+}
+
+.sprite-svg-icon-bag_2x {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -208px;
+}
+
+.sprite-svg-icon-briefcase_2x {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -240px;
+}
+
+.sprite-svg-icon-chat-double_2x {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -272px;
+}
+
+.sprite-svg-icon-face_2x {
+    width: 28px;
+    height: 30px;
+    background-position: 0 -304px;
+}
+
+.sprite-svg-icon-footer-arrow-right_2x {
+    width: 22px;
+    height: 16px;
+    background-position: 0 -334px;
+}
+
+.sprite-svg-icon-footer-logo-aware_2x {
+    width: 192px;
+    height: 40px;
+    background-position: 0 -350px;
+}
+
+.sprite-svg-icon-hamberger_2x {
+    width: 26px;
+    height: 26px;
+    background-position: 0 -390px;
+}
+
+.sprite-svg-icon-mail_2x {
+    width: 32px;
+    height: 28px;
+    background-position: 0 -416px;
+}
+
+.sprite-svg-icon-mastercard_2x {
+    width: 68px;
+    height: 40px;
+    background-position: 0 -444px;
+}
+
+.sprite-svg-icon-news_2x {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -484px;
+}
+
+.sprite-svg-icon-paypal_2x {
+    width: 116px;
+    height: 31px;
+    background-position: 0 -516px;
+}
+
+.sprite-svg-icon-quote_2x {
+    width: 26px;
+    height: 22px;
+    background-position: 0 -547px;
+}
+
+.sprite-svg-icon-ruby_2x {
+    width: 32px;
+    height: 28px;
+    background-position: 0 -569px;
+}
+
+.sprite-svg-icon-search_2x {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -597px;
+}
+
+.sprite-svg-icon-visa_2x {
+    width: 84px;
+    height: 27px;
+    background-position: 0 -629px;
+}

@@ -1,0 +1,89 @@
+body {
+    line-height: 1.5;
+    font-family: "Spoqa Han Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol
+ {
+    margin-top:0;
+    margin-bottom: 1.5em;
+}
+
+h6 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin-bottom: 1.2em;
+}
+
+h5 {
+    font-size: 1.5625em;
+    line-height: 1.92;
+    margin-bottom: .96em;
+}
+
+h4 {
+    font-size: 1.953em;
+    line-height: 1.54;
+    margin-bottom: .7681em;
+}
+
+h3 {
+    font-size: 2.441em;
+    line-height: 1.85;
+    margin-bottom: .6146em;
+}
+
+h2 {
+    font-size: 3.0517em;
+    line-height: 1.48;
+    margin-bottom: .4916em;
+}
+
+h1 {
+    font-size: 3.8146em;
+    line-height: 1.18;
+    margin-bottom: 0.3933em;
+    font-weight:300;
+}
+
+img {vertical-align: top;}
+
+.button {
+  padding:0.75em 1.5em;
+  font-size:16px;
+  font-weight:bold;
+  border:0;
+  line-height:1.5;
+  border-radius:4px;
+  text-shadow: 0 0 5px hsla(0, 0%, 0%, 0.75);
+  box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.4);
+  color:#fff;
+}
+
+.button:focus {
+  position:relative;
+  top:3px;
+  box-shadow:inset 0px 3px 1px 0px rgba(0,0,0,0.4);
+  outline:0;
+}
+
+.confirm {background:#345efb;}
+.cancel {background:#e6ab0c;}
+.delete {background:#e61515;}
+.modify {background:#0cc26f;}
+
+.clearfix:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+
+

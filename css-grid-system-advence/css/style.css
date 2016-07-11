@@ -1,0 +1,23 @@
+.main {
+	height:12em;
+	background:red;
+	color:#fff;
+	text-align:Center;
+	line-height:12em;
+}
+
+.sidebar {
+	height:9em;
+	background:blue;
+	color:#fff;
+	text-align:Center;
+	line-height:9em;
+}
+
+.banner {
+	height:6em;
+	background:purple;
+	color:#fff;
+	text-align:Center;
+	line-height:6em;
+}

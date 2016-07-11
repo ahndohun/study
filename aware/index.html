@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>aware</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Varela+Round" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald" />
+	<link rel="stylesheet" href="/aware/css/ress.css">
+	<link rel="stylesheet" href="/aware/css/grid.css">
+	<link rel="stylesheet" href="/aware/css/common.css">
+	<link rel="stylesheet" href="/aware/css/layout.css">
+</head>
+<body class="grid-container">
+	
+	<header class="header row">
+
+		<h1 class="logo col-2"><a href="#">aware</a></h1>
+
+		<a href="#" class="btn_hamberger"><img src="images/btn_hamberger.png" srcset="images/svg-icon-hamberger@2x.png 2x" alt="메뉴 펼침 버튼" /></a>
+		
+		<!-- 제품 카테고리 -->
+		<nav class="product-category col-4">
+			<h2 class="hidden-txt">상품 카테고리</h2>
+			<ul>
+				<li><a href="#">Men</a></li>
+				<li><a href="#">Women</a></li>
+				<li><a href="#">Kids</a></li>
+				<li><a href="#">Accessories</a></li>
+			</ul>
+		</nav>
+
+		<!-- 자주 쓰이는 메뉴 -->
+		<div class="quick_menu col-2">
+			<h2 class="hidden-txt">자주 쓰이는 메뉴</h2>
+			<ul>
+				<li class="bag">
+					<a href="#">
+						<img src="images/svg-icon-bag.png" srcset="images/svg-icon-bag.png 1x, images/svg-icon-bag@2x.png 2x" alt="배송" />
+						<span class="count">1</span>
+					</a>
+				</li>
+				<li><a href="#"><img src="images/svg-icon-face.png" srcset="images/svg-icon-face@2x.png 2x" alt="마이페이지" /></a></li>
+				<li><a href="#"><img src="images/svg-icon-search.png" srcset="images/svg-icon-search@2x.png 2x" alt="검색" /></a></li>
+			</ul>
+		</nav>
+
+	</header>
+	
+	<main>
+
+		<article class="recommended-products-wrap row">
+
+			<h2 class="hidden-txt">추천 상품들</h2>
+			<div class="recommended-products-list col-6">
+
+				<section class="recommended-products-item">
+					<img src="images/img_slider01.png" alt="" />
+					<div class="recommended-products-txt title-type01">
+						<h2>MEN</h2>
+						<h3>Replay Jeans Hyperflex</h3>
+						<p>Skinny Comfort Ultra Stretch Light Wash</p>
+						<div class="recommended-products-buy">
+							<a href="#">
+								<span>$145</span>
+								<strong>Buy now</strong>
+							</a>
+						</div>
+					</div>
+					<div class="recommended-products-control">
+						<a href="#recommended-products-link" class="hidden-txt">추천 상품 목록 바로가기</a>
+						<a href="#" class="recommended-products-prev">Replay Jeans Hyperflex 상품 살펴보기</a>
+						<a href="#" class="recommended-products-next">Replay Jeans Hyperflex 상품 살펴보기</a>
+					</div>
+				</section>
+
+			</div>
+
+			<div id="recommended-products-link" class="recommended-products-link col-2">
+				<a href="#"><img src="images/photo-slider-slides-04.png" alt="Replay Jeans Hyperflex" /></a>
+				<a href="#" class="active"><img src="images/photo-slider-slides-03.png" alt="Replay Jeans Hyperflex" /></a>
+				<a href="#"><img src="images/photo-slider-slides-02.png" alt="Replay Jeans Hyperflex" /></a>
+				<a href="#"><img src="images/photo-slider-slides-01.png" alt="Replay Jeans Hyperflex" /></a>
+			</div>
+
+		</article>
+
+		<div class="featured-products"></div>
+	</main>
+
+</body>
+</html>
