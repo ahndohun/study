@@ -14,11 +14,26 @@
 </head>
 <body class="grid-container">
 	
+	<div class="hidden-txt">
+		<a href="#">전체메뉴 바로가기</a>
+		<a href="#main-contents">본문바로가기</a>
+	</div>
+	
 	<header class="header row">
 
 		<h1 class="logo col-2"><a href="#">aware</a></h1>
 
-		<a href="#" class="btn_hamberger"><img src="images/btn_hamberger.png" srcset="images/svg-icon-hamberger@2x.png 2x" alt="메뉴 펼침 버튼" /></a>
+		<button class="btn_hamberger">전체메뉴</button>
+
+		<!-- 자주 쓰이는 메뉴 -->
+		<section class="frequently-used-menu col-2">
+			<h2 class="hidden-txt">자주 쓰이는 메뉴</h2>
+			<ul>
+				<li class="bag"><a href="#"><strong class="count">1</strong><span class="hidden-txt">개의 미확인</span> 배송</a></li>
+				<li class="face"><a href="#">마이페이지</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</ul>
+		</section>
 		
 		<!-- 제품 카테고리 -->
 		<nav class="product-category col-4">
@@ -31,24 +46,9 @@
 			</ul>
 		</nav>
 
-		<!-- 자주 쓰이는 메뉴 -->
-		<div class="quick_menu col-2">
-			<h2 class="hidden-txt">자주 쓰이는 메뉴</h2>
-			<ul>
-				<li class="bag">
-					<a href="#">
-						<img src="images/svg-icon-bag.png" srcset="images/svg-icon-bag.png 1x, images/svg-icon-bag@2x.png 2x" alt="배송" />
-						<span class="count">1</span>
-					</a>
-				</li>
-				<li><a href="#"><img src="images/svg-icon-face.png" srcset="images/svg-icon-face@2x.png 2x" alt="마이페이지" /></a></li>
-				<li><a href="#"><img src="images/svg-icon-search.png" srcset="images/svg-icon-search@2x.png 2x" alt="검색" /></a></li>
-			</ul>
-		</nav>
-
 	</header>
 	
-	<main>
+	<main id="main-contents">
 
 		<article class="recommended-products-wrap row">
 
@@ -69,8 +69,8 @@
 						</div>
 					</div>
 					<div class="recommended-products-control">
-						<a href="#recommended-products-link" class="hidden-txt">추천 상품 목록 바로가기</a>
-						<a href="#" class="recommended-products-prev">Replay Jeans Hyperflex 상품 살펴보기</a>
+						<a href="#recommended-products-link" class="hidden-txt">추천 상품 목록 바로가기</a><br />
+						<a href="#" class="recommended-products-prev">Replay Jeans Hyperflex 상품 살펴보기</a><br />
 						<a href="#" class="recommended-products-next">Replay Jeans Hyperflex 상품 살펴보기</a>
 					</div>
 				</section>

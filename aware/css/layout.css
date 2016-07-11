@@ -31,7 +31,12 @@ body {
   position:absolute;
   top:50%;
   left:30px;
+  width:13px;
+  height:13px;
+  background-image:url("../images/svg-icon-hamberger@2x.png");
+  background-size:13px;
   transform: translateY(-50%);
+  text-indent: -9999px;
 }
 
 .product-category {
@@ -62,20 +67,34 @@ body {
   vertical-align: middle;
 }
 
-.quick_menu ul {
+.frequently-used-menu {float:right !important;}
+
+.frequently-used-menu ul {
   float:right;
   padding:2px 30px 0 0;
 }
 
-.quick_menu li {
+.frequently-used-menu li {
+  position:relative;
   float:left;
   margin-left:40px;
   line-height:1;
+  
 }
 
-.quick_menu li.bag {position:relative;}
+.frequently-used-menu li a {
+  display:block;
+  width:16px;
+  height:16px;
+  background-size:16px;
+  text-indent: -9999px;
+}
 
-.quick_menu li.bag .count {
+.frequently-used-menu li.bag a {background-image:url("../images/svg-icon-bag@2x.png");}
+.frequently-used-menu li.face a {background-image:url("../images/svg-icon-face@2x.png");}
+.frequently-used-menu li.search a {background-image:url("../images/svg-icon-search@2x.png");}
+
+.frequently-used-menu li.bag .count {
   position:absolute;
   top:-10px;
   right:-10px;
@@ -88,6 +107,7 @@ body {
   font-size:9px;
   line-height:1;
   border-radius:100%;
+  text-indent: 0;
 }
 
 .recommended-products-item {
