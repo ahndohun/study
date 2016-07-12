@@ -100,7 +100,8 @@ a:focus {
   outline-width:3px;
 }
 
-a:visited {
+a:visited,
+a:link {
     color: #222;
 }
 
