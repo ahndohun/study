@@ -95,6 +95,15 @@ a:hover {
   outline-width: 0; /* Remove the outline when hovering in all browsers */
 }
 
+a:focus {
+  outline-color: red;
+  outline-width:3px;
+}
+
+a:visited {
+    color: #222;
+}
+
 code,
 kbd,
 pre,

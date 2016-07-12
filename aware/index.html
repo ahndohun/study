@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,87 +7,308 @@
 	<title>aware</title>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Varela+Round" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif" />
 	<link rel="stylesheet" href="css/ress.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
 </head>
-<body class="grid-container">
+<body>
 	
-	<div class="hidden-txt">
-		<a href="#">전체메뉴 바로가기</a>
-		<a href="#main-contents">본문바로가기</a>
-	</div>
+	<div class="grid-container">
 	
-	<header class="header row">
-
-		<h1 class="logo col-2"><a href="#">aware</a></h1>
-
-		<button class="btn_hamberger">전체메뉴</button>
-
-		<!-- 자주 쓰이는 메뉴 -->
-		<section class="frequently-used-menu col-2">
-			<h2 class="hidden-txt">자주 쓰이는 메뉴</h2>
-			<ul>
-				<li class="bag"><a href="#"><strong class="count">1</strong><span class="hidden-txt">개의 미확인</span> 배송</a></li>
-				<li class="face"><a href="#">마이페이지</a></li>
-				<li class="search"><a href="#">검색</a></li>
-			</ul>
-		</section>
+		<div class="hidden-txt">
+			<a href="#">전체메뉴 바로가기</a>
+			<a href="#main-contents">본문바로가기</a>
+		</div>
 		
-		<!-- 제품 카테고리 -->
-		<nav class="product-category col-4">
-			<h2 class="hidden-txt">상품 카테고리</h2>
-			<ul>
-				<li><a href="#">Men</a></li>
-				<li><a href="#">Women</a></li>
-				<li><a href="#">Kids</a></li>
-				<li><a href="#">Accessories</a></li>
-			</ul>
-		</nav>
+		<header class="header row">
 
-	</header>
-	
-	<main id="main-contents">
+			<h1 class="logo col-2"><a href="#">aware</a></h1>
 
-		<article class="recommended-products-wrap row">
+			<button class="btn_hamberger">전체메뉴</button>
 
-			<h2 class="hidden-txt">추천 상품들</h2>
-			<div class="recommended-products-list col-6">
+			<!-- 자주 쓰이는 메뉴 -->
+			<section class="frequently-used-menu col-2">
+				<h2 class="hidden-txt">FREQUENTLY USED MENU</h2>
+				<ul>
+					<li class="bag"><a href="#"><strong class="count">1</strong><span class="hidden-txt">개의 상품이</span> 장바구니에 담겨있습니다.</a></li>
+					<li class="face"><a href="#">마이페이지</a></li>
+					<li class="search"><a href="#">검색</a></li>
+				</ul>
+			</section>
+			
+			<nav class="product-category col-4">
+				<h2 class="hidden-txt">PRODUCT CATEGORY</h2>
+				<ul>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Kids</a></li>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			</nav>
 
-				<section class="recommended-products-item">
-					<img src="images/img_slider01.png" alt="" />
-					<div class="recommended-products-txt title-type01">
-						<h2>MEN</h2>
-						<h3>Replay Jeans Hyperflex</h3>
-						<p>Skinny Comfort Ultra Stretch Light Wash</p>
-						<div class="recommended-products-buy">
-							<a href="#">
-								<span>$145</span>
-								<strong>Buy now</strong>
-							</a>
+		</header>
+		
+		<main id="main-contents">
+
+			<article class="recommended-products-wrap row">
+
+				<h2 class="hidden-txt">RECOMMENDED PRODUCTS</h2>
+				<ul class="recommended-products-list col-6">
+
+					<li id="item02" class="recommended-products-item">
+						<img src="images/img_slider01.png" alt="" />
+						<div class="title-type01">
+							<h3>MEN</h3>
+							<h4>Replay Jeans Hyperflex</h4>
+							<p>Skinny Comfort Ultra Stretch Light Wash</p>
+							<div class="recommended-products-buy">
+								<a href="#">
+									<span>$145</span>
+									<strong>Buy now</strong>
+								</a>
+							</div>
 						</div>
+						<div class="recommended-products-control">
+							<a href="#recommended-products-link" class="hidden-txt">추천 상품 전체 목록 바로가기</a><br />
+							<a href="#" class="recommended-products-prev">Replay Jeans Hyperflex 상품 살펴보기</a><br />
+							<a href="#" class="recommended-products-next">Replay Jeans Hyperflex 상품 살펴보기</a>
+						</div>
+					</li>
+
+				</ul>
+
+				<ul id="recommended-products-link" class="recommended-products-link col-2">
+					<li><a href="#item01"><img src="images/photo-slider-slides-04.png" alt="Replay Jeans Hyperflex" /></a></li>
+					<li><a href="#item02" class="active"><img src="images/photo-slider-slides-03.png" alt="Replay Jeans Hyperflex" /></a></li>
+					<li><a href="#item03"><img src="images/photo-slider-slides-02.png" alt="Replay Jeans Hyperflex" /></a></li>
+					<li><a href="#item04"><img src="images/photo-slider-slides-01.png" alt="Replay Jeans Hyperflex" /></a></li>
+				</ul>
+
+			</article>
+
+			<article class="product-banner">
+				<h2 class="hidden-txt">PRODUCT BANNER</h2>
+
+				<ul class="product-banner-list row">
+
+					<li class="product-banner-item col-4">
+						<a href="#">
+							<img src="images/photo-banners-01.png" alt="" />
+							<div class="title-type01 banner-item-type01">
+								<h3>WOMEN</h3>
+								<h4>Big Spring Sale -70%</h4>
+								<p>Shoes, hats, pants, jeans.</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="product-banner-item col-2">
+						<a href="#">
+							<img src="images/photo-banners-02.png" alt="" />
+							<div class="title-type01 banner-item-type02">
+								<h3>MEN</h3>
+								<h4>Last Winter Sale Boots<br> 70% Discount</h4>
+							</div>
+						</a>
+					</li>
+
+					<li class="product-banner-item col-2">
+						<a href="#">
+							<img src="images/photo-banners-03.png" alt="" />
+							<div class="title-type01 banner-item-type03">
+								<h3>ACCESSORIES</h3>
+								<h4>New Hats for Every<br> Day</h4>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</article>
+
+			<article class="featured-products row">
+				
+				<div class="featured-products-title title-type02 col-2">
+					<h2>FEATURED<br> PRODUCTS</h2>
+					<p>the best<br> of our store</p>
+				</div>
+
+				<ul class="featured-products-list">
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">H&M Chino Shorts</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-01.png" alt=""></div>
+							<div class="featured-products-price sale">
+								<div class="label">SALE</div>
+								<div class="price">$100</div>
+								<div class="discount">$110</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">Bobbies Elegant Leather<br> Driving Shoes</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-02.png" alt=""></div>
+							<div class="featured-products-price hit">
+								<div class="label">HIT</div>
+								<div class="price">$100</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">Bobbies Elegant Leather<br> Driving Shoes</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-03.png" alt=""></div>
+							<div class="featured-products-price">
+								<div class="price">$320</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">Bobbies Elegant Leather<br> Driving Shoes</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-04.png" alt=""></div>
+							<div class="featured-products-price">
+								<div class="price">$20</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">Bobbies Elegant Leather<br> Driving Shoes</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-05.png" alt=""></div>
+							<div class="featured-products-price">
+								<div class="price">$320</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">Bobbies Elegant Leather<br> Driving Shoes</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-06.png" alt=""></div>
+							<div class="featured-products-price new">
+								<div class="label">NEW</div>
+								<div class="price">$60</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<h3 class="featured-products-title">Bobbies Elegant Leather Driving Shoes</h3>
+							<div class="featured-products-photo"><img src="images/photo-featured-07.png" alt=""></div>
+							<div class="featured-products-price hit">
+								<div class="label">HIT</div>
+								<div class="price">$100</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				
+			</article>
+
+			<article class="our-blog row">
+				
+				<div class="our-blog-title title-type02 col-2">
+					<h2>OUR<br> BLOG</h2>
+					<p>tips, trends, <br>advices</p>
+				</div>
+
+				<ul class="our-blog-list">
+					<li class="col-2">
+						<a href="#">
+							<div class="our-blog-date">April 12, 2015</div>
+							<h3 class="our-blog-title">The Most Stylish Fashion Designers of All Time</h3>
+							<div class="our-blog-writer">
+								<span>by</span> ANVAR JORAEV
+							</div>
+						</a>
+					</li>
+					<li class="col-2">
+						<a href="#">
+							<div class="our-blog-date">May 1, 2015</div>
+							<h3 class="our-blog-title">One of America's Favorite Drunk Foods Is Being Recalled</h3>
+							<div class="our-blog-writer">
+								<span>by</span> BAHODIR KOMILOV
+							</div>
+						</a>
+					</li>
+					<li class="col-2 our-blog-item-half">
+						<a href="#">
+							<div class="our-blog-date">April 12, 2015</div>
+							<h3 class="our-blog-title">Surprise 'Games of Thrones' Clips Are Really Deep, Man</h3>
+						</a>
+					</li>
+					<li class="col-2 our-blog-item-half">
+						<a href="#">
+							<div class="our-blog-date">April 12, 2015</div>
+							<h3 class="our-blog-title">Patek Philippe Sells Out of $2.5 Million Watches</h3>
+						</a>
+					</li>
+				</ul>
+				
+			</article>
+
+			<div class="row">
+
+				<article class="what-people-say col-4">
+					
+					<div class="title-type02">
+						<h2>WHAT PEOPLE SAY</h2>
 					</div>
-					<div class="recommended-products-control">
-						<a href="#recommended-products-link" class="hidden-txt">추천 상품 목록 바로가기</a><br />
-						<a href="#" class="recommended-products-prev">Replay Jeans Hyperflex 상품 살펴보기</a><br />
-						<a href="#" class="recommended-products-next">Replay Jeans Hyperflex 상품 살펴보기</a>
+
+					<ul class="what-people-say-list">
+						<li>
+							<blockquote>
+								<p>And they, too, had big dreams for their daughter. I believe that we can give our middle class relief and provide working families with a road to opportunity. They've worked hard all their lives, many times only to see their jobs shipped overseas or their pension dumped after a lifetime of labor.</p>
+								<cite>
+									<div class="what-people-say-face"><img src="images/photo-testimonials.png" alt="" /></div>
+									<div class="what-people-say-info">
+										<div class="what-people-say-name">Komol Kuchkarov</div>
+										<div class="what-people-say-country">from Uzbekistan</div>
+									</div>
+								</cite>
+							</blockquote>
+						</li>
+					</ul>
+
+					<ul class="what-people-say-pagination">
+						<li class="active"><a href="#">Komol Kuchkarov의 후기</a></li>
+						<li><a href="#">Komol Kuchkarov의 후기</a></li>
+						<li><a href="#">Komol Kuchkarov의 후기</a></li>
+						<li><a href="#">Komol Kuchkarov의 후기</a></li>
+					</ul>
+
+					<a href="#" class="what-people-say-btn chat">chat</a>
+					<button class="what-people-say-btn reload">reload</button>
+					
+				</article>
+
+				<article class="who-we-are col-4">
+					
+					<div class="title-type02">
+						<h2>WHO WE ARE</h2>
 					</div>
-				</section>
+
+					<div class="inf row">
+						<div class="col-1 suffix-2"><img src="images/photo-Inf-01.png" alt="" /></div>
+						<div class="col-1 suffix-1"><img src="images/photo-Inf-02.png" alt="" /></div>
+						<div class="col-2 suffix-1" style="background:red; height:60px;">1</div>
+						<div class="col-2 suffix-1 prefix-1" style="background:red; height:60px;">1</div>
+						<div class="col-1"><img src="images/photo-Inf-03.png" alt="" /></div>
+						<div class="col-1"><img src="images/photo-Inf-04.png" alt="" /></div>
+						<div class="col-1 prefix-1"><img src="images/photo-Inf-05.png" alt="" /></div>
+					
+
+					<a href="#" class="what-people-say-btn bag">bag</a>
+					<span class="what-people-say-btn date">est. 2015</span>
+					
+				</article>
 
 			</div>
+		</main>
 
-			<div id="recommended-products-link" class="recommended-products-link col-2">
-				<a href="#"><img src="images/photo-slider-slides-04.png" alt="Replay Jeans Hyperflex" /></a>
-				<a href="#" class="active"><img src="images/photo-slider-slides-03.png" alt="Replay Jeans Hyperflex" /></a>
-				<a href="#"><img src="images/photo-slider-slides-02.png" alt="Replay Jeans Hyperflex" /></a>
-				<a href="#"><img src="images/photo-slider-slides-01.png" alt="Replay Jeans Hyperflex" /></a>
-			</div>
-
-		</article>
-
-		<div class="featured-products"></div>
-	</main>
+	</div>
 
 </body>
 </html>
