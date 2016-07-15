@@ -18,7 +18,7 @@ body {
     overflow: hidden;
 }
 
-@mixin clearfix() {
+@mixin clearfix {
     &:before,
     &:after {
         content: "";
@@ -48,12 +48,38 @@ body {
 }
 
 @mixin btn_large {
-    width:100px;
-    padding:9px 0;
+    padding:9px 10px;
+}
+
+@mixin btn_go {
+    &:after {
+        content:'';
+        display:inline-block;
+        width:6px;
+        height:9px;
+        margin-left:10px;
+        margin-right:-5px;
+        background:url('../images/icon_arrow.png');
+    }
+}
+.btn-large-blue-go {
+    @include btn_base();
+    @include btn_large();
+    @include btn_go();
+    padding-left:15px;
+    padding-right:15px;
+    background:$maincolor;
+    font-weight:bold;
 }
 
 .btn-large-orange {
     @include btn_base();
     @include btn_large();
     background:$subcolor;
+}
+
+.btn-large-empty {
+    @include btn_base();
+    @include btn_large();
+    background:none;
 }

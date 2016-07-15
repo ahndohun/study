@@ -1,6 +1,6 @@
 .new-arrivals-inside {
 	padding:80px 0;
-
+	
     @include inside_layout();
     @include clearfix();
 }

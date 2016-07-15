@@ -1,6 +1,2 @@
-.clearfix:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-
+body{font-family:'Lato', sans-serif;font-size:12px;line-height:1.2;color:#333}.readable-hidden{position:absolute;line-height:0;text-indent:100%;white-space:nowrap;overflow:hidden}.btn-large-blue-go{text-align:center;line-height:1;color:#fff;border-radius:4px;padding:9px 10px;padding-left:15px;padding-right:15px;background:#06f;font-weight:bold}.btn-large-blue-go:after{content:'';display:inline-block;width:6px;height:9px;margin-left:10px;margin-right:-5px;background:url("../images/icon_arrow.png")}.btn-large-orange{text-align:center;line-height:1;color:#fff;border-radius:4px;padding:9px 10px;background:#f4553b}.btn-large-empty{text-align:center;line-height:1;color:#fff;border-radius:4px;padding:9px 10px;background:none}
+/*# sourceMappingURL=common.css.map */

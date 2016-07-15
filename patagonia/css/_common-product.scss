@@ -1,0 +1,56 @@
+.common-product-wrap{
+	padding:90px 0;
+}
+
+.common-product-inside {
+
+    @include inside_layout();
+    @include clearfix();
+}
+
+.common-product-info {
+	float:right;
+	width:50%;
+	padding-top:25px;
+
+	h3 {
+		margin-bottom:15px;
+		font-size:18px;
+		font-weight:bold;
+	}
+
+	p {
+		margin-bottom:15px;
+		line-height:1.5;
+	}	
+}
+
+.common-product-info-bottom {
+	
+	.common-product-info-price {
+		float:left;
+		font-size:30px;
+		font-weight:normal;
+	}
+
+	button {
+		float:right;
+	}
+}
+
+
+
+.common-product-color {
+	float:left;
+	width:50%;
+
+	li {
+		float:left;
+		width:33.33%;
+		transition:all 0.2s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
