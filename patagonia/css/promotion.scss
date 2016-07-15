@@ -1,0 +1,9 @@
+.promotion-wrap {
+	background: $maincolor;
+}
+
+.promotion-inside {
+
+    @include inside_layout();
+    @include clearfix();
+}

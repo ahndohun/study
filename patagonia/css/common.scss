@@ -1,0 +1,59 @@
+$maincolor: #0066ff;
+$subcolor: #f4553b;
+$darken: #333;
+$gray: #f8f8f8;
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size:12px;
+    line-height:1.2;
+    color:$darken;
+}
+
+.readable-hidden {
+    position:absolute;
+    line-height:0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin inside_layout {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin btn_base {
+    text-align:center;
+    line-height:1;
+    color:#fff;
+    border-radius:4px;
+}
+
+@mixin btn_small {
+    width:66px;
+    padding:5px 0;
+}
+
+@mixin btn_large {
+    width:100px;
+    padding:9px 0;
+}
+
+.btn-large-orange {
+    @include btn_base();
+    @include btn_large();
+    background:$subcolor;
+}

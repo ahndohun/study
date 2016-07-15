@@ -1,0 +1,61 @@
+.header-wrap {
+	background: $maincolor;
+}
+
+.header-inside {
+	padding:20px 90px;
+
+    .btn-large-orange {
+        float:right;
+    }
+
+    @include inside_layout();
+    @include clearfix();
+}
+
+.header-logo {
+    float: left;
+    margin-right:150px;
+
+    a {
+    	display:block;
+        padding:3px 0 7px 0;
+    	font-size:14px;
+    	letter-spacing:1px;
+    	color:#fff;
+    	font-weight:normal;
+
+    	&:before {
+    		content:'';
+    		display:inline-block;
+    		width:23px;
+    		height:19px;
+    		margin-right:19px;
+            margin-bottom:-2px;
+    		background:url("../images/ico-logo-white.png");
+    		background-size:23px;
+    	}
+    }
+}
+
+.header-category {
+	float:left;
+	width:500px;
+    margin-right:100px;
+
+    .header-category-list {
+        @include clearfix();
+
+        li {
+            float:left;
+
+            a { 
+                display:block;
+                width:100px;
+                padding:8px 0;
+                color:#fff;
+                text-align:center;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+/**
+ * Grid System (160 [unit(130) + gutter(15)], 8 columns)
+ * 960px
+ * base-font-size: 0.9375rem (14px)
+ * base-leading-ratio: 1.5; // 16 * 1.5 = 24px
+ */
+
+/**
+ * --------------------------------
+ * Overlay Grid Guideline Module
+ * ----------------------------- */
+.grid-container::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*
+  height: 500vh;
+  background: linear-gradient(90deg, transparent 8.4%, rgba(191, 64, 64, 0.3) 8.4%, rgba(191, 64, 64, 0.3) 91.6%, transparent 91.6%), linear-gradient(transparent 26px, #26923f 26px);
+  background-size: 12.5% 1px, 1px 1.6875rem;
+  */
+}
+
+/**
+ * --------------------------------
+ * Grid Container Module
+ * ----------------------------- */
+.grid-container {
+  position: relative;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background:#fff;
+}
+
+/**
+ * --------------------------------
+ * row Module
+ * ----------------------------- */
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/**
+ * --------------------------------
+ * column Module
+ * ----------------------------- */
+.row [class*="col-"] {
+  float: left;
+}
+
+.row .col-1 {width: 12.5%;}
+.row .col-2 {width: 25%;}
+.row .col-3 {width: 37.5%;}
+.row .col-4 {width: 50%;}
+.row .col-5 {width: 62.5%;}
+.row .col-6 {width: 75%;}
+.row .col-7 {width: 87.5%;}
+.row .col-8 {width: 100%;}
+
+.row .prefix-1 {margin-left: 12.5%;}
+.row .prefix-2 {margin-left: 25%;}
+.row .prefix-3 {margin-left: 37.5%;}
+.row .prefix-4 {margin-left: 50%;}
+.row .prefix-5 {margin-left: 62.5%;}
+.row .prefix-6 {margin-left: 75%;}
+.row .prefix-7 {margin-left: 87.5%;}
+.row .prefix-8 {margin-left: 100%;}
+
+.row .suffix-1 { margin-right: 12.5% }
+.row .suffix-2 { margin-right: 25% }
+.row .suffix-3 { margin-right: 37.5% }
+.row .suffix-4 { margin-right: 50% }
+.row .suffix-5 { margin-right: 62.5% }
+.row .suffix-6 { margin-right: 75% }
+.row .suffix-7 { margin-right: 87.5% }
+.row .suffix-8 { margin-right: 100% }
