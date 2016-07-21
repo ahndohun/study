@@ -1,0 +1,166 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size:14px;
+    line-height:1.5;
+    color:#fff;
+}
+
+.readable-hidden {
+    position:absolute;
+    line-height:0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ir {
+    display:inline-block;
+    text-indent: -9999px;
+}
+
+.clearfix:after {
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.button {
+    border:1px solid #fff;
+    line-height:1;
+}
+
+.box {
+    position:relative;
+    background-size:100% 100%;
+    background-position:center center;
+    transition:all 0.2s;
+}
+
+.box:hover {
+    background-size:120% 120%;
+    background-position:center center;
+}
+
+.box:after {
+    content:'';
+    display:block;
+}
+
+.box.type01:after {
+    padding-bottom:105.93%;
+}
+
+.box.type02:after {
+    padding-bottom:70.62%;
+}
+
+.box.type03:after {
+    padding-bottom:141.24%;
+}
+
+.box.type04:after {
+    padding-bottom:105.93%;
+}
+
+.box.type05:after {
+    padding-bottom:52.97%;
+}
+
+.box.type06:after {
+    padding-bottom:35.31%;
+}
+
+.single-text {
+    position:absolute;
+    padding:20px;
+    font-size:22px;
+    line-height:29px;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.textbox {
+    background:#7f6162;
+    font-weight:300;
+    text-align: center;
+}
+
+.textbox-inner {
+    position:absolute;
+    top:50%;
+    left:0;
+    padding:0 22%;
+    transform: translateY(-50%);
+}
+
+.textbox-inner .button {
+    display:inline-block;
+    width: 100%;
+    padding:5px 0;
+    font-size:12px;
+}
+
+.textbox-inner p {
+    margin-bottom:1em;
+    font-size:18px;
+}
+
+@media (min-width:650px) {
+    .textbox-inner p {
+        font-size:30px;
+    }
+}
+
+@media (min-width:760px) {
+
+    .single-text {
+        font-size:16px;
+    }
+
+    .textbox-inner p {
+        font-size:20px;
+    }
+}
+
+@media (min-width:1180px) {
+    .textbox-inner p {
+        font-size:22px;
+    }
+
+    .textbox-inner .button {
+        font-size:16px;
+    }
+}
+
+.photo02 p {
+    right:0;
+    text-align:right;
+}
+
+.photo04 p {
+    right:0;
+    text-align:right;
+}
+
+.photo09 p {
+    bottom:100px;
+}
+
+.photo13 p {
+    width:100%;
+    text-align: center;
+}
+
+.photo01 {background-image:url("../images/photo-01.png");}
+.photo02 {background-image:url("../images/photo-02.png");}
+.photo03 {background-image:url("../images/photo-03.png");}
+.photo04 {background-image:url("../images/photo-04.png");}
+.photo05 {background-image:url("../images/photo-05.png");}
+.photo06 {background-image:url("../images/photo-06.png");}
+.photo07 {background-image:url("../images/photo-07.png");}
+.photo08 {background-image:url("../images/photo-08.png");}
+.photo09 {background-image:url("../images/photo-09.png");}
+.photo10 {background-image:url("../images/photo-10.png");}
+.photo11 {background-image:url("../images/photo-11.png");}
+.photo12 {background-image:url("../images/photo-12.png");}
+.photo13 {background-image:url("../images/photo-13.png");}
+.photo14 {background-image:url("../images/photo-14.png");}

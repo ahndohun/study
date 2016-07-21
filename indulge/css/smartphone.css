@@ -1,0 +1,93 @@
+body {
+	background:#003652 url("../images/bg_container_mobile.png") no-repeat top center;
+    background-size:contain;
+}
+
+.header {
+	margin-bottom:180px;
+	text-align:center;
+}
+
+.header * {vertical-align:middle;}
+.header h1 {
+	margin: 0 18px 33px 18px;
+	padding: 80px 0 58px 0;
+	border-bottom: 1px solid #737680;
+}
+
+.header-logo {
+	width:178px;
+	height:51px;
+	background:url("../images/logo-header.png") no-repeat;
+}
+
+.header_btn_wrap {display:inline-block;}
+
+.header-category-btn {
+	width:33px;
+	height:25px;
+	background:url("../images/icon-hamberger.png") no-repeat;
+}
+
+.header-search {
+	width:35px;
+	height:35px;
+	background:url("../images/icon-search.png") no-repeat;
+}
+
+.header-checkout-btn {
+	width:42px;
+	height:32px;
+	background:url("../images/icon-card.png") no-repeat;
+}
+
+.header-btn {
+	display:inline-block;
+	margin:0 30px;
+	background-size:contain;
+	text-indent: -9999px;
+}
+
+.header-category {
+	position:fixed;
+	left:-300px;
+	width:300px;
+}
+
+.hero-text {
+	max-width:540px;
+	margin:0 auto;
+	text-align:center;
+}
+.hero-text h2 {
+	margin-bottom:21px;
+	padding:0 18px;
+	font-size:27px;
+	line-height:1.5;
+	letter-spacing:-1px;	
+}
+
+.hero-text h2 strong {
+	display:block;
+	font-size:32px;
+	font-weight:100;
+}
+
+.hero-text-btn {
+	display:inline-block;
+	padding:12px 30px;
+	border:1px solid #fff;
+	font-size:18px;
+	font-weight:900;
+	line-height:1;
+}
+
+.hero-text-btn:before {
+	content:'';
+	display:inline-block;
+	width:13px;
+	height:16px;
+	margin-right:10px;
+	background:url("../images/icon-play.png");
+	vertical-align:middle;
+}

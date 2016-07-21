@@ -1,0 +1,85 @@
+@media (min-width:1180px) {
+
+	body {
+		background-size:auto;
+	}
+
+	.container {
+		width:1180px;
+		margin:0 auto;
+	 }
+
+	.header h1 {
+		margin:0;
+		padding: 100px 0 80px 0;
+		border:0;
+	}
+
+	.header_btn_wrap {
+		display:block;
+		float:right;
+	}
+
+	.header-btn {
+		display:inline-block;
+		width:auto;
+		height:auto;
+		margin:0 0 0 23px;
+		text-indent: 0px;
+		background-position: left center;
+		font-size:18px;
+	}
+
+	.header-category-btn {display:none;}
+
+	.header-search {
+		padding-left:23px;
+		background-size:19px;
+	}
+
+	.header-search input[type="text"] {
+		width:55px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		transition: all 0.2s;
+		outline:0;
+	}
+
+	.header-search input[type="text"]:focus {
+		width:110px;
+		border-bottom:1px solid #fff;
+	}
+
+	.header-search input[type="submit"] {
+		position: absolute;
+	    top: -1000px
+	}
+
+	.header-checkout-btn {
+		padding-left:30px;
+		background-size:24px;
+	}
+
+	.header-category {
+		position:static;
+		width:auto;
+	}
+	
+	.header-category-list {float:left;}
+	.header-category-list li {
+		float:left;
+		margin-right:23px;
+		font-size:18px;
+	}
+
+	.header-category-list li a:hover,
+	.header-category-list li a:focus {
+		font-weight:bold;
+	}
+	
+	.hero-text {}
+	.hero-text h2 {
+		font-size:32px;
+	}
+}
