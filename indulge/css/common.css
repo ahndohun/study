@@ -93,10 +93,33 @@ body {
 }
 
 .textbox-inner .button {
+    position:relative;
     display:inline-block;
     width: 100%;
     padding:5px 0;
     font-size:12px;
+    overflow:hidden;
+}
+
+.textbox-inner .button:after {
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    bottom:-100%;
+    left:0;
+    background:#fff;
+    transition: all 0.2s;
+    z-index:-1;
+}
+
+.textbox-inner .button:hover {
+    color:#000;
+}
+
+.textbox-inner .button:hover:after {
+    bottom:0;
 }
 
 .textbox-inner p {
@@ -105,6 +128,7 @@ body {
 }
 
 @media (min-width:650px) {
+
     .textbox-inner p {
         font-size:30px;
     }
@@ -122,6 +146,7 @@ body {
 }
 
 @media (min-width:1180px) {
+
     .textbox-inner p {
         font-size:22px;
     }

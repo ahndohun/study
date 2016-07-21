@@ -120,10 +120,12 @@ body {
 
 .hero-text-btn:hover {
 	color:#000;
+	font-size:24px;
 }
 
 .hero-text-btn:hover:before {
 	width:0;
+	margin:0;
 }
 
 .hero-text-btn:hover:after {
