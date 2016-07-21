@@ -1,9 +1,3 @@
-
-.container {
-	width:
-}
-
-
 .row::after {
   content: '';
   display: block;

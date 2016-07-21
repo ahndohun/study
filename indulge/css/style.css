@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-	height:100vh;
+	min-height:800px;
 	text-align:center;
 }
 
@@ -112,11 +112,22 @@ body {
 }
 
 .footer-logo {
-	width:94px;
-	height:27px;
+	width:142px;
+	height:41px;
 	margin-bottom:50px;
 	background-image: url("../images/footer-logo.png");
 	background-size: cover;
+}
+
+.sns_link {
+	width:100%;
+	margin-bottom:50px;
+}
+
+.sns_link li {
+	float:left;
+	width:33.33%;
+	font-size:38px;
 }
 
 .etc-list li {
