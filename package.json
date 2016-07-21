@@ -1,0 +1,32 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "sc5-styleguide": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ahndohun@github.com/ahndohun/study.git"
+  },
+  "keywords": [
+    "study"
+  ],
+  "author": "ahn do hun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahndohun/study/issues"
+  },
+  "homepage": "https://github.com/ahndohun/study#readme"
+}

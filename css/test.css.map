@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.sass"],"names":[],"mappings":"AAAA;EACC,UAAU;EACV,UAAU;EACV,2BAAmB;EAAnB,mBAAmB,EAAG","file":"test.css","sourcesContent":["div {\n\tborder: 0;\n\tmargin: 0;\n\ttransition: all 1s; }\n"],"sourceRoot":"/source/"}
