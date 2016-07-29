@@ -18,6 +18,10 @@
 	transform: translate(-50%, -50%);
 
 	@include tablet {
+		width:353px;
+	}
+
+	@include desktop {
 		width:449px;
 	}
 
@@ -34,6 +38,12 @@
 		z-index:-1;
 
 		@include tablet {
+			width:446px;
+			height:408px;
+			left:-70%;
+		}
+
+		@include desktop {
 			width:568px;
 			height:520px;
 			left:-92%;

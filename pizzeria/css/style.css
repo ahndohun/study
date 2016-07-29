@@ -339,6 +339,11 @@ body {
 }
 @media (min-width: 768px) {
   .carousel-logo {
+    width: 353px;
+  }
+}
+@media (min-width: 1220px) {
+  .carousel-logo {
     width: 449px;
   }
 }
@@ -355,6 +360,13 @@ body {
   z-index: -1;
 }
 @media (min-width: 768px) {
+  .carousel-logo:before {
+    width: 446px;
+    height: 408px;
+    left: -70%;
+  }
+}
+@media (min-width: 1220px) {
   .carousel-logo:before {
     width: 568px;
     height: 520px;
