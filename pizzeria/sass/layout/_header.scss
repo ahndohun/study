@@ -1,0 +1,184 @@
+.header {
+	position:relative;
+	height:$base-line*4;
+	padding-top:$base-line*2;
+	padding-left:5px;
+	padding-right:5px;
+	border-bottom:1px solid #c6c6c6;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.08);
+
+	@include tablet {
+		height:$base-line*5;
+		padding-top:$base-line*3;
+		padding-left:40px;
+		padding-right:40px;
+	}
+}
+
+.header-logo-img {
+	position:absolute;
+	bottom:0;
+	left:50%;
+	width:180px;
+	margin:0 auto;
+	text-align:center;
+	transform: translate(-50%, 61%);
+	z-index:2;
+
+	@include tablet {
+		width:250px;
+		border:0;
+		margin:0;
+	}
+
+	@include desktop {
+		width:340px;
+	}
+}
+
+.header-sud {
+	position:absolute;
+	top:0;
+	left:7px;
+	font-size:12px;
+	line-height:$base-line*2;
+	color:#fff;
+	z-index:3;
+		
+	span {
+		font-size:14px;
+	}
+
+	@include tablet {
+		left:40px;
+	}
+
+	@include desktop {
+		font-size:16px;
+	}
+}
+
+.header-top {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:0 7px;
+	background:#ed1c24;
+	height:$base-line*2;
+	line-height:$base-line*2;
+	z-index:2;
+
+	&:before,
+	&:after {
+		content:'';
+		display:block;
+		position:absolute;
+		width:100%;
+		height:100%;
+		background: linear-gradient( 90deg, transparent 40px, #c30007 40px );
+		background-size: 80px 100%;
+		z-index:-1;
+	}
+
+	@include desktop {
+		padding:0 40px;
+
+		&:before {
+			left:100px;
+			width:400px;
+		}
+
+		&:after {
+			right:140px;
+			width:400px;
+		}
+	}
+}
+
+.quick-link {
+	float:right;
+	font-size:10px;
+
+	li {
+		float:left;
+		margin-left:20px;
+
+		a {
+			color:#fff;
+			
+		}
+	}
+
+	@include desktop {
+		font-size:12px;
+
+		li {
+			float:left;
+			margin-left:35px;
+
+			a {
+				color:#fff;
+				
+			}
+		}
+	}
+}
+
+.gnb {
+	position:fixed;
+	width:300px;
+	top:0;
+	right:-300px;
+
+	@include tablet {
+		position:static;
+		width:auto;
+		float:right;
+		font-size:10px;
+
+		li {
+			float:left;
+			margin-left:30px;
+
+			&:nth-child(1) {background:url("../images/bg_gnb01.png") no-repeat top center;}
+			&:nth-child(2) {background:url("../images/bg_gnb02.png") no-repeat top center;}
+			&:nth-child(3) {background:url("../images/bg_gnb03.png") no-repeat top center;}
+			&:nth-child(4) {background:url("../images/bg_gnb04.png") no-repeat top center; margin-left:20px;}
+
+			a {
+				display:block;
+				padding-top:$base-line*1;
+				color:#ed1c24;
+			}
+		}
+	}
+}
+
+%header-button {
+	margin-top:5px;
+	font-size:9px;
+}
+
+.header-button-grid {
+	float:left;
+	@include button-base;
+	@extend %header-button;
+
+	@include tablet {
+		margin:0;
+		padding:$base-line*1 0 0;
+		border:0;
+		background:url("../images/btn_hamberger.png") no-repeat top center;
+	}
+}
+
+.header-button-menu {
+	float:right;
+	@include button-base;
+	@extend %header-button;
+
+	@include tablet {
+		display:none;
+	}
+}

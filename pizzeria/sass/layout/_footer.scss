@@ -1,0 +1,105 @@
+.footer-wrap {
+	background:url("../images/bg_footer.png");
+	color:#fff;
+
+	@include tablet {
+	}
+}
+
+.footer-etc {
+	padding:0 20px;
+	border-bottom:1px dotted #303643;
+	@extend %clearfix;
+
+	li {
+		float:left;
+		width:33.33%;
+		text-align:center;
+		line-height:$base-line*2;
+
+		a {
+			color:#fff;
+
+			&:before {
+				content:'';
+				display:inline-block;
+				width:12px;
+				height:12px;
+				margin-right:4px;
+				background:url("../images/bul_footer01.png");
+				background-size:cover;
+			}
+		}
+	}
+
+	@include tablet {
+		border:0;
+		padding:0;
+
+		li {
+			width:auto;
+			margin-left:25px;
+			font-size:16px;
+		}
+
+	}
+}
+
+.footer-location {
+	float:left;
+	margin:6px 0 0 20px;
+	padding-left:30px;
+	background:url("../images/ico_location.png") no-repeat;
+	background-size:20px;
+
+	dt {
+		margin-bottom:3px;
+	}
+
+	@include tablet {
+		margin-left:70px;
+
+		dt {
+			font-size:16px;
+		}
+	}
+}
+
+.footer-sns {
+	float:right;
+	padding-right:20px;
+
+	a {
+		line-height:$base-line*2;
+
+		img {
+			vertical-align:middle;
+		}
+	}
+	
+	@include tablet {
+		padding:$base-line*1 50px 20px;
+
+		a {
+			line-height:$base-line*3;
+		}
+	}
+	
+}
+
+.footer-copyright {
+	height:$base-line*2;
+	background:#2b2b2b;
+	line-height:$base-line*2;
+	text-align:center;
+	color:#fff;
+	clear:both;
+
+	@include tablet {
+		height:$base-line*4;
+		padding:0 140px 0 0;
+		line-height:$base-line*4;
+		font-size:14px;
+		text-align:right;
+	}
+}

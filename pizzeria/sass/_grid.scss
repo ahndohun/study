@@ -1,0 +1,41 @@
+$column-name: col;
+
+$column-count-smartphone : 4;
+$column-count-tablet : 8;
+$column-count-desktop : 10;
+
+$column-width-smartphone : 25%;
+$column-width-tablet : 12.5%;
+$column-width-desktop : 10%;
+
+.row {
+	@extend %clearfix;
+
+	& [class*="#{$column-name}-"] {
+		float:left;
+	}
+}
+
+@include smartphone {
+	@for $i from 1 through $column-count-smartphone {
+		.#{$column-name}-sm-#{$i} {
+			width: ($column-width-smartphone * $i)
+		}
+	}
+}
+
+@include tablet {
+	@for $i from 1 through $column-count-tablet {
+		.#{$column-name}-md-#{$i} {
+			width: ($column-width-tablet * $i)
+		}
+	}
+}
+
+@include desktop {
+	@for $i from 1 through $column-count-desktop {
+		.#{$column-name}-lg-#{$i} {
+			width: ($column-width-desktop * $i)
+		}
+	}
+}

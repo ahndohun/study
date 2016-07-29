@@ -1,0 +1,8 @@
+@mixin button-base {
+	padding:12px 15px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+	border:1px solid #e2e2e2;
+	border-radius:4px;
+	color:#ed1c24;
+	line-height:1;
+}

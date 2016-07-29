@@ -1,0 +1,145 @@
+.infomation-wrap {
+	position:relative;
+	padding:$base-line*2 20px 0;
+	background:url("../images/bg_wood.jpg");
+	text-align:center;
+	color:#96481f;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+	@extend %clearfix;
+
+	@include tablet {
+		padding:$base-line*3 0 $base-line*1;
+	}
+
+	&:before {
+		content:'';
+		display:block;
+		position:absolute;
+		top:-4px;
+		left:50%;
+		width:55px;
+		height:43px;
+		background:url("../images/img-riborn.png");
+		background-size:cover;
+		transform: translateX(-50%);
+		
+		@include tablet {
+			top:-7px;
+			width:77px;
+			height:59px;
+		}
+
+		@include desktop {
+			width:93px;
+			height:76px;
+		}
+		
+	}
+}
+
+.infomation-tit {
+	position:relative;
+	margin-bottom:$base-line*1;
+	font-size:22px;
+	color:#954f20;
+
+	&:after {
+		content:'';
+		display:block;
+		position:absolute;
+		top:30px;
+		left:50%;
+		width:14px;
+		height:14px;
+		background:url("../images/bul_infomation_arrow.png");
+		background-size:cover;
+		transform: translateX(-50%);
+
+		@include tablet {
+			top:52px;
+			width:18px;
+			height:18px;
+		}
+
+		@include desktop {
+			top:52px;
+			width:24px;
+			height:24px;
+		}
+	}
+
+	@include tablet {
+		margin-bottom:$base-line*2;
+		font-size:28px;
+		line-height:$base-line*2;
+	}
+
+	@include desktop {
+		font-size:30px;
+	}
+}
+
+.infomation-list {
+
+}
+
+.infomation-list-box {
+	margin-bottom:$base-line*1;
+	padding-bottom:10px;
+	border:1px solid #96481f;
+	vertical-align:top;
+	border-radius:4px;
+	box-shadow: 0 1px 1px 1px rgba(255,255,255,0.5);
+
+	h3 {
+		font-size:18px;
+		line-height:$base-line*2;
+	}
+
+	li {
+		font-size:16px;
+		line-height:$base-line*1;
+	}
+
+	a {
+		color:#96481f;
+	}
+
+	@include tablet {
+		display:inline-block;
+		width:27%;
+		margin:0 15px;
+		padding:$base-line*1 0;
+
+		h3 {
+			margin-bottom:$base-line*1;
+			font-size:20px;
+			line-height:$base-line*1;
+		}
+
+		li {
+			font-size:15px;
+		}
+
+		strong {
+			font-size:17px;
+		}
+	}
+
+	@include desktop {
+		max-width:300px;
+
+		h3 {
+			font-size:27px;
+		}
+
+		li {
+			font-size:21px;
+		}
+
+		strong {
+			font-size:23px;
+			line-height:$base-line*2;
+		}
+	}
+}
