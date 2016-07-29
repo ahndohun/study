@@ -5,6 +5,7 @@
 .welcome-box {
 	position:relative;
 	padding:0 20px $base-line*2 20px;
+	z-index:2;
 	@extend %clearfix;
 
 	cite {
@@ -22,6 +23,7 @@
 		padding-top:$base-line*2;
 		padding-bottom:$base-line*1;
 		vertical-align:top;
+
 		/*
 		&:nth-child(1) {
 			.welcome-box-tit {

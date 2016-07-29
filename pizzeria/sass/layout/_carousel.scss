@@ -1,0 +1,42 @@
+.carousel-wrap {
+	position:relative;
+	height:$base-line*12;
+	background:url("../images/bg_slider.jpg");
+	background-size:100%;
+	background-position:0 10%;
+
+	@include tablet {
+		height:$base-line*24;
+	}
+}
+
+.carousel-logo {
+	position:absolute;
+	top:44%;
+	left:50%;
+	width:210px;
+	transform: translate(-50%, -50%);
+
+	@include tablet {
+		width:449px;
+	}
+
+	&:before {
+		position:absolute;
+		top:-25%;
+		left:-35%;
+		content:'';
+		display:block;
+		width:198px;
+		height:180px;
+		background:url("../images/img_slider_item03.png");
+		background-size:cover;
+		z-index:-1;
+
+		@include tablet {
+			width:568px;
+			height:520px;
+			left:-92%;
+		}
+	}
+}
