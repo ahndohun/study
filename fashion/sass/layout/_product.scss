@@ -1,0 +1,74 @@
+.photo {
+	img {
+		max-width:100%;
+		display:block;
+	}
+}
+
+.product-size {
+	position:fixed;
+	top:80px;
+	right:15px;
+	width:35px;
+
+	li {
+		margin-bottom:10px;
+		list-style:none;	
+	}
+}
+
+.size {
+	
+	@include base-radio-btn(35px, #ddba76) {
+		transition: all 0.2s
+	}
+}
+
+.color01 {
+	@include base-radio-btn(35px, #8c643c, image)	
+}
+
+.color02 {
+	@include base-radio-btn(35px, #ba3337, image)	
+}
+
+.color03 {
+	@include base-radio-btn(35px, #4e6a89, image)	
+}
+
+.product-color {
+	position:fixed;
+	top:50%;
+	right:15px;
+	width:35px;
+
+	li {
+		margin-bottom:10px;
+		list-style:none;	
+	}
+}
+
+.product-info {
+	padding:25px;
+	background:$sub_color;
+	color:#fff;
+	overflow:hidden;
+}
+
+.product-name {
+	float:left;
+	font-size:14px;
+}
+
+.product-price {
+	float:right;
+}
+
+.btn-add-basket {
+	@include btn_full();
+	margin:0;
+	padding:25px 0;
+	background:$main_color;
+	font-size:12px;
+	color:#fff;
+}

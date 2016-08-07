@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i|Merriweather:300,300i,400,400i,700,700i)
+
+@mixin typo($fm: sans, $fz: 16px, $fw: 400, $fs: normal)
+	font-size: $fz
+
+	@if $fm == sans
+		font-family: 'Merriweather Sans', sans-serif
+	@else
+		font-family: 'Merriweather', serif
+
+	@if $fw == light
+		font-weight: 300
+	@else if $fw == regular
+		font-weight: 400
+	@else if $fw == bold
+		font-weight: 700
+
+	@if $fs == italic
+		font-style: italic
+	@else
+		font-style: normal
+
+body
+	@include typo(sans, 16px, 400, normal)

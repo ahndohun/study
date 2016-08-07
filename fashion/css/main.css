@@ -1,0 +1,171 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i|Merriweather:300,300i,400,400i,700,700i);
+.color01 .icon:after, .color02 .icon:after, .color03 .icon:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+body {
+  font-size: 16px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-style: normal; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px; }
+  .header a {
+    display: block;
+    line-height: 1; }
+    .header a img {
+      max-width: 16px; }
+      .header a img:hover {
+        color: #000; }
+  .header .btn-prev {
+    float: left; }
+  .header .header-right {
+    float: right; }
+    .header .header-right a {
+      float: left;
+      margin-left: 30px; }
+
+.photo img {
+  max-width: 100%;
+  display: block; }
+
+.product-size {
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  width: 35px; }
+  .product-size li {
+    margin-bottom: 10px;
+    list-style: none; }
+
+.size {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .size .icon {
+    display: inline-block; }
+  .size input[type="radio"] {
+    display: none; }
+  .size .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: all 0.2s; }
+  .size input:checked + .icon {
+    background: #ddba76;
+    color: #fff; }
+
+.color01 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .color01 .icon {
+    display: inline-block; }
+  .color01 input[type="radio"] {
+    display: none; }
+  .color01 .icon {
+    width: 35px;
+    padding-bottom: 35px;
+    background: #8c643c; }
+    .color01 .icon:after {
+      content: "v";
+      opacity: 0;
+      transition: all 0.2s;
+      color: #fff; }
+  .color01 input:checked + .icon:after {
+    opacity: 1; }
+
+.color02 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .color02 .icon {
+    display: inline-block; }
+  .color02 input[type="radio"] {
+    display: none; }
+  .color02 .icon {
+    width: 35px;
+    padding-bottom: 35px;
+    background: #ba3337; }
+    .color02 .icon:after {
+      content: "v";
+      opacity: 0;
+      transition: all 0.2s;
+      color: #fff; }
+  .color02 input:checked + .icon:after {
+    opacity: 1; }
+
+.color03 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .color03 .icon {
+    display: inline-block; }
+  .color03 input[type="radio"] {
+    display: none; }
+  .color03 .icon {
+    width: 35px;
+    padding-bottom: 35px;
+    background: #4e6a89; }
+    .color03 .icon:after {
+      content: "v";
+      opacity: 0;
+      transition: all 0.2s;
+      color: #fff; }
+  .color03 input:checked + .icon:after {
+    opacity: 1; }
+
+.product-color {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  width: 35px; }
+  .product-color li {
+    margin-bottom: 10px;
+    list-style: none; }
+
+.product-info {
+  padding: 25px;
+  background: #333333;
+  color: #fff;
+  overflow: hidden; }
+
+.product-name {
+  float: left;
+  font-size: 14px; }
+
+.product-price {
+  float: right; }
+
+.btn-add-basket {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: currentcolor;
+  color: currentcolor;
+  font-family: "MerriweatherSans Regular";
+  font-size: 16px;
+  text-align: center;
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin: 0;
+  padding: 25px 0;
+  background: #ddba76;
+  font-size: 12px;
+  color: #fff; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

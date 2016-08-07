@@ -1,0 +1,32 @@
+.header {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	padding:15px;
+
+	a {
+		display:block;
+		line-height:1;
+
+		img {
+			max-width:16px;
+			&:hover {
+				color:#000;
+			}
+		}
+	}
+
+	.btn-prev {
+		float:left;
+	}
+
+	.header-right {
+		float:right;
+
+		a {
+			float:left;
+			margin-left:30px;
+		}
+	}
+}

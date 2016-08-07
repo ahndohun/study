@@ -1,0 +1,24 @@
+@mixin btn_base($display: inline-block, $width: 100%, $height: auto, $background-color: currentcolor, $color: currentcolor, $font-family: "MerriweatherSans Regular", $font-size: 16px, $text-align: center, $line-height: 1, $margin-top: 20px, $margin-bottom: 20px)
+  display: $display
+  width: $width
+  height: $height
+  background-color: $background-color
+  color: $color
+  font-family: $font-family
+  font-size: $font-size
+  text-align: $text-align
+  line-height: $line-height
+  margin-top: $margin-top
+  margin-bottom: $margin-bottom
+
+
+@mixin btn_full
+  @include btn_base($width: 100%, $margin-bottom: 0)
+
+
+@mixin btn_wide
+  @include btn_base($width: 672px)
+
+
+@mixin btn_facebook
+  @include btn_base($width: 672px, $background-color: #215b9a, $color: #FFF)

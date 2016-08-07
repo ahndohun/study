@@ -1,0 +1,50 @@
+@mixin base-radio-btn($icon-size: 100%, $icon-color: null, $icon-type: null)
+  position: relative
+  display: inline-block
+  cursor: pointer
+
+  .icon
+    display: inline-block
+
+  input[type="radio"]
+    display: none
+  
+  @if $icon-type == text
+    
+    .icon
+      @content
+      
+    input:checked + .icon
+      color: $icon-color
+  
+  @else if $icon-type == image
+    
+    .icon
+      width: $icon-size
+      padding-bottom: $icon-size
+      background: $icon-color
+      @content
+      
+      &:after
+        content: 'v'
+        opacity: 0
+        transition: all 0.2s
+        color: #fff
+        @extend %position-center
+      
+    input:checked + .icon
+      &:after
+        opacity: 1
+        
+  @else
+    
+    .icon
+      width: $icon-size
+      height: $icon-size
+      line-height: $icon-size
+      text-align: center
+      @content
+      
+    input:checked + .icon
+      background: $icon-color
+      color: #fff
