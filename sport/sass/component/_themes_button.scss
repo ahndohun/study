@@ -1,0 +1,47 @@
+@mixin themes-base($themes-color) {
+  position:relative;
+  display:inline-block;
+  @include vps(width, 162px);
+  @include vps(height, 162px);
+  border-radius:100%;
+  border:1px solid $themes-color;
+  
+  .themes-name {
+    text-indent:-9999px;
+    &:before,
+    &:after {
+      content:'';
+      display:block;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      border-radius:100%;
+      transition:all 0.3s;
+      border:1px solid $themes-color;
+    }
+
+    &:before {
+      @include vps(width, 135px);
+      @include vps(height, 135px);
+      border:1px solid $themes-color;
+    }
+
+    &:after {
+      @include vps(width, 110px);
+      @include vps(height, 110px);
+      background-color:$themes-color;
+    }
+  }
+  
+  
+  input[type="radio"] {display:none;}
+  input[type="radio"]:checked ~ .themes-name {
+    color:$themes-color;
+    
+    &:after {
+      width:100%;
+      height:100%;
+    }
+  }
+}

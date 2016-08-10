@@ -1,0 +1,40 @@
+@import "reset.css";
+@import "base/variable";
+@import "base/function";
+@import "base/mixin";
+
+@import "component/themes_button";
+@import "component/toggle_button";
+
+body {
+  @include vps(padding, 64px);
+  background:#000;
+}
+
+.toggle-btn {
+  @include toggle-base;
+}
+
+.themes-selector {
+  text-align:center;
+  li {
+    float:left;
+    width:33.33%;
+    
+    &:nth-child(1) {
+      .themes-btn {
+        @include themes-base($primary-color);
+      }
+    }
+    &:nth-child(2) {
+      .themes-btn {
+        @include themes-base(#f0167c);
+      }
+    }
+    &:nth-child(3) {
+      .themes-btn {
+        @include themes-base(#d2d940);
+      }
+    }
+  }
+}
