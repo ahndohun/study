@@ -7,46 +7,63 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="default-themes">
+	
+	<header class="header">
+		<h1>PREFERENCE</h1>
+		<a href="#" class="header-prev"></a>
+	</header>
+	
+	<section class="social-btns">
+		<h2>CONNECT YOUR SOCIALS</h2>
 
-	<div class="default-themes">
+		<label for="facebook" class="toggle-btn" role="button">
+			<input type="checkbox" id="facebook" />
+			<strong class="toggle-name">FACEBOOK</strong>
+		</label>
 
-	  <label for="facebook" class="toggle-btn">
-	    <input type="checkbox" id="facebook" />
-	    <strong class="toggle-name">FACEBOOK</strong>
-	  </label>
-
-	  <label for="twitter" class="toggle-btn">
-	    <input type="checkbox" id="twitter" />
-	    <strong class="toggle-name">TWITTER</strong>
-	  </label>
+		<label for="twitter" class="toggle-btn" role="button">
+			<input type="checkbox" id="twitter" />
+			<strong class="toggle-name">TWITTER</strong>
+		</label>
 	  
-	  <label for="instagram" class="toggle-btn">
-	    <input type="checkbox" id="instagram" />
-	    <strong class="toggle-name">INSTAGRAM</strong>
-	  </label>
+		<label for="instagram" class="toggle-btn" role="button">
+			<input type="checkbox" id="instagram" />
+			<strong class="toggle-name">INSTAGRAM</strong>
+		</label>
+	</section>
 
-	  <ul class="themes-selector">
-	    <li>
-	      <label for="themes01" class="themes-btn">
-	        <input type="radio" id="themes01" name="color" />
-	        <div class="themes-name">themes01</div>
-	      </label>
-	    </li>
-	    <li>
-	      <label for="themes02" class="themes-btn">
-	        <input type="radio" id="themes02" name="color" />
-	        <div class="themes-name">themes02</div>
-	      </label>
-	    </li>
-	    <li>
-	      <label for="themes03" class="themes-btn">
-	        <input type="radio" id="themes03" name="color" />
-	        <div class="themes-name">themes03</div>
-	      </label>
-	    </li>
-	  </ul>
-
-	</div>
+	<section class="theme-btns">
+		<h2>PICK YOUR THEME STYLE</h2>
+		<ul class="themes-selector" role="radiogroup">
+			<li>
+				<label for="themes01" class="themes-btn" role="button">
+					<input type="radio" id="themes01" name="color" />
+					<div class="themes-name">themes01</div>
+				</label>
+			</li>
+			<li>
+				<label for="themes02" class="themes-btn" role="button">
+					<input type="radio" id="themes02" name="color" />
+					<div class="themes-name">themes02</div>
+				</label>
+			</li>
+			<li>
+				<label for="themes03" class="themes-btn" role="button">
+					<input type="radio" id="themes03" name="color" />
+					<div class="themes-name">themes03</div>
+				</label>
+			</li>
+		</ul>
+	</section>
+	
+	<section class="continue-nav">
+		<h2>CONTINUE</h2>
+		<div class="dot-nav-area">
+			<a href="#" class="dot"></a>
+			<a href="#" class="dot on"></a>
+			<a href="#" class="dot"></a>
+		</div>
+	</section>
 	
 </body>
 </html>

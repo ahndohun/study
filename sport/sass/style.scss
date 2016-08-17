@@ -11,17 +11,61 @@ body {
   background:#000;
 }
 
+.header {
+  position:relative;
+  @include vps(margin-bottom, 99px);
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    @include vps(font-size, 28px);
+    font-weight: 700;
+  }
+
+  .header-prev {
+    position: absolute;
+    top:50%;
+    left:0;
+    display:block;
+    @include vps(width, 16px);
+    @include vps(height, 28px);
+    background:url("../images/btn-prev.png");
+    background-size:cover;
+    transform:translateY(-50%);
+  }  
+}
+
+
+h2 {
+  @include vps(margin-bottom, 84px);
+  @include vps(font-size, 20px);
+  font-weight: 400;
+  text-align:center;
+  color: #9b9b9b;
+}
+
 .toggle-btn {
   @include toggle-base;
 }
 
+.theme-btns {
+  &:after {
+    content: '';
+    display:table;
+    clear: both;
+  }
+  @include vps(margin-bottom, 188px);
+}
+
 .themes-selector {
   text-align:center;
+
   li {
     float:left;
     width:33.33%;
     
     &:nth-child(1) {
+      text-align:left;
       .themes-btn {
         @include themes-base($primary-color);
       }
@@ -32,9 +76,37 @@ body {
       }
     }
     &:nth-child(3) {
+      text-align:right;
       .themes-btn {
         @include themes-base(#d2d940);
       }
+    }
+  }
+}
+
+.continue-nav {
+  h2 {
+    @include vps(margin-bottom, 26px);
+    color: #0de0fc;
+    font-family: OpenSans;
+    @include vps(font-size, 35px);
+    font-weight: 700;
+  }
+}
+
+.dot-nav-area {
+  text-align: center;
+  
+  .dot {
+    display: inline-block;
+    @include vps(width, 16px);
+    @include vps(height, 16px);
+    background-color: #9d9d9d;
+    border-radius: 50%;
+    &.on,
+    &:hover,
+    &:active {
+      background-color: #0de0fc;
     }
   }
 }

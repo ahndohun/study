@@ -2,6 +2,10 @@
   position:relative;
   display:block;
   @include vps(margin-bottom, 64px);
+
+  &:last-of-type {
+    @include vps(margin-bottom, 87px);
+  }
   
   .toggle-name {
     @include vps(font-size, 35px);

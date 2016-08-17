@@ -9,10 +9,38 @@ body {
   padding: 8.53333vw;
   background: #000; }
 
+.header {
+  position: relative;
+  margin-bottom: 13.2vw;
+  text-align: center; }
+  .header h1 {
+    color: #fff;
+    font-size: 3.73333vw;
+    font-weight: 700; }
+  .header .header-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 2.13333vw;
+    height: 3.73333vw;
+    background: url("../images/btn-prev.png");
+    background-size: cover;
+    transform: translateY(-50%); }
+
+h2 {
+  margin-bottom: 11.2vw;
+  font-size: 2.66667vw;
+  font-weight: 400;
+  text-align: center;
+  color: #9b9b9b; }
+
 .toggle-btn {
   position: relative;
   display: block;
   margin-bottom: 8.53333vw; }
+  .toggle-btn:last-of-type {
+    margin-bottom: 11.6vw; }
   .toggle-btn .toggle-name {
     font-size: 4.66667vw;
     color: #9b9b9b;
@@ -47,45 +75,55 @@ body {
     .toggle-btn input[type="checkbox"]:checked ~ .toggle-name:after {
       left: 100%; }
 
+.theme-btns {
+  margin-bottom: 25.06667vw; }
+  .theme-btns:after {
+    content: '';
+    display: table;
+    clear: both; }
+
 .themes-selector {
   text-align: center; }
   .themes-selector li {
     float: left;
     width: 33.33%; }
-    .themes-selector li:nth-child(1) .themes-btn {
-      position: relative;
-      display: inline-block;
-      width: 21.6vw;
-      height: 21.6vw;
-      border-radius: 100%;
-      border: 1px solid #0de0fc; }
-      .themes-selector li:nth-child(1) .themes-btn .themes-name {
-        text-indent: -9999px; }
-        .themes-selector li:nth-child(1) .themes-btn .themes-name:before, .themes-selector li:nth-child(1) .themes-btn .themes-name:after {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          border-radius: 100%;
-          transition: all 0.3s;
-          border: 1px solid #0de0fc; }
-        .themes-selector li:nth-child(1) .themes-btn .themes-name:before {
-          width: 18vw;
-          height: 18vw;
-          border: 1px solid #0de0fc; }
-        .themes-selector li:nth-child(1) .themes-btn .themes-name:after {
-          width: 14.66667vw;
-          height: 14.66667vw;
-          background-color: #0de0fc; }
-      .themes-selector li:nth-child(1) .themes-btn input[type="radio"] {
-        display: none; }
-      .themes-selector li:nth-child(1) .themes-btn input[type="radio"]:checked ~ .themes-name {
-        color: #0de0fc; }
-        .themes-selector li:nth-child(1) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
-          width: 100%;
-          height: 100%; }
+    .themes-selector li:nth-child(1) {
+      text-align: left; }
+      .themes-selector li:nth-child(1) .themes-btn {
+        position: relative;
+        display: inline-block;
+        width: 21.6vw;
+        height: 21.6vw;
+        border-radius: 100%;
+        border: 1px solid #0de0fc; }
+        .themes-selector li:nth-child(1) .themes-btn .themes-name {
+          text-indent: 9999px;
+          overflow: hidden; }
+          .themes-selector li:nth-child(1) .themes-btn .themes-name:before, .themes-selector li:nth-child(1) .themes-btn .themes-name:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            transition: all 0.3s;
+            border: 1px solid #0de0fc; }
+          .themes-selector li:nth-child(1) .themes-btn .themes-name:before {
+            width: 18vw;
+            height: 18vw;
+            border: 1px solid #0de0fc; }
+          .themes-selector li:nth-child(1) .themes-btn .themes-name:after {
+            width: 14.66667vw;
+            height: 14.66667vw;
+            background-color: #0de0fc; }
+        .themes-selector li:nth-child(1) .themes-btn input[type="radio"] {
+          display: none; }
+        .themes-selector li:nth-child(1) .themes-btn input[type="radio"]:checked ~ .themes-name {
+          color: #0de0fc; }
+          .themes-selector li:nth-child(1) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
+            width: 100%;
+            height: 100%; }
     .themes-selector li:nth-child(2) .themes-btn {
       position: relative;
       display: inline-block;
@@ -94,7 +132,8 @@ body {
       border-radius: 100%;
       border: 1px solid #f0167c; }
       .themes-selector li:nth-child(2) .themes-btn .themes-name {
-        text-indent: -9999px; }
+        text-indent: 9999px;
+        overflow: hidden; }
         .themes-selector li:nth-child(2) .themes-btn .themes-name:before, .themes-selector li:nth-child(2) .themes-btn .themes-name:after {
           content: '';
           display: block;
@@ -120,37 +159,58 @@ body {
         .themes-selector li:nth-child(2) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
           width: 100%;
           height: 100%; }
-    .themes-selector li:nth-child(3) .themes-btn {
-      position: relative;
-      display: inline-block;
-      width: 21.6vw;
-      height: 21.6vw;
-      border-radius: 100%;
-      border: 1px solid #d2d940; }
-      .themes-selector li:nth-child(3) .themes-btn .themes-name {
-        text-indent: -9999px; }
-        .themes-selector li:nth-child(3) .themes-btn .themes-name:before, .themes-selector li:nth-child(3) .themes-btn .themes-name:after {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          border-radius: 100%;
-          transition: all 0.3s;
-          border: 1px solid #d2d940; }
-        .themes-selector li:nth-child(3) .themes-btn .themes-name:before {
-          width: 18vw;
-          height: 18vw;
-          border: 1px solid #d2d940; }
-        .themes-selector li:nth-child(3) .themes-btn .themes-name:after {
-          width: 14.66667vw;
-          height: 14.66667vw;
-          background-color: #d2d940; }
-      .themes-selector li:nth-child(3) .themes-btn input[type="radio"] {
-        display: none; }
-      .themes-selector li:nth-child(3) .themes-btn input[type="radio"]:checked ~ .themes-name {
-        color: #d2d940; }
-        .themes-selector li:nth-child(3) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
-          width: 100%;
-          height: 100%; }
+    .themes-selector li:nth-child(3) {
+      text-align: right; }
+      .themes-selector li:nth-child(3) .themes-btn {
+        position: relative;
+        display: inline-block;
+        width: 21.6vw;
+        height: 21.6vw;
+        border-radius: 100%;
+        border: 1px solid #d2d940; }
+        .themes-selector li:nth-child(3) .themes-btn .themes-name {
+          text-indent: 9999px;
+          overflow: hidden; }
+          .themes-selector li:nth-child(3) .themes-btn .themes-name:before, .themes-selector li:nth-child(3) .themes-btn .themes-name:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            transition: all 0.3s;
+            border: 1px solid #d2d940; }
+          .themes-selector li:nth-child(3) .themes-btn .themes-name:before {
+            width: 18vw;
+            height: 18vw;
+            border: 1px solid #d2d940; }
+          .themes-selector li:nth-child(3) .themes-btn .themes-name:after {
+            width: 14.66667vw;
+            height: 14.66667vw;
+            background-color: #d2d940; }
+        .themes-selector li:nth-child(3) .themes-btn input[type="radio"] {
+          display: none; }
+        .themes-selector li:nth-child(3) .themes-btn input[type="radio"]:checked ~ .themes-name {
+          color: #d2d940; }
+          .themes-selector li:nth-child(3) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
+            width: 100%;
+            height: 100%; }
+
+.continue-nav h2 {
+  margin-bottom: 3.46667vw;
+  color: #0de0fc;
+  font-family: OpenSans;
+  font-size: 4.66667vw;
+  font-weight: 700; }
+
+.dot-nav-area {
+  text-align: center; }
+  .dot-nav-area .dot {
+    display: inline-block;
+    width: 2.13333vw;
+    height: 2.13333vw;
+    background-color: #9d9d9d;
+    border-radius: 50%; }
+    .dot-nav-area .dot.on, .dot-nav-area .dot:hover, .dot-nav-area .dot:active {
+      background-color: #0de0fc; }

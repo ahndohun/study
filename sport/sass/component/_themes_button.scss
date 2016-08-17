@@ -7,7 +7,9 @@
   border:1px solid $themes-color;
   
   .themes-name {
-    text-indent:-9999px;
+    text-indent:9999px;
+    overflow:hidden;
+    
     &:before,
     &:after {
       content:'';
